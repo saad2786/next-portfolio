@@ -8,13 +8,13 @@ const Experience = () => {
       <h1 className='heading'>
         My work <span className='text-purple'>experience</span>
       </h1>
-      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10'>
+      <div className='w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 items-center '>
         {workExperience.map((item) => (
           <Button
             key={item.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius='1.50rem'
-            className='flex-1 text-white border-neutral-200 dark:border-slate-800'
+            className='flex-1 text-white   border-neutral-200 dark:border-slate-800'
           >
             <div className='flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2'>
               <img

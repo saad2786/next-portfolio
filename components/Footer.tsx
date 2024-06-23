@@ -2,11 +2,12 @@ import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className='mb-[100px]  w-full md:mb-5'>
+    <footer className='mb-[100px]  w-full md:mb-5' id='contact'>
       <div className='w-full '>
         <h1 className='heading'>
           Ready to take <span className='text-purple'>your</span> digital
@@ -32,14 +33,16 @@ const Footer = () => {
           Copyrights &copy; 2024 Saad
         </p>
         <div className='flex items-center md:gap-3 gap-6'>
-          {socialMedia.map(({ id, img }) => {
+          {socialMedia.map(({ id, img, link }) => {
             return (
-              <div
+              <Link
+                href={link}
+                target='_blank'
                 key={id}
                 className='flex items-center  justify-center p-3 bg-black-200 cursor-pointer bg-opacity-50 backdrop-blur-lg backdrop-filter saturate-150 rounded-xl h-10 w-10 border-black-300 border '
               >
                 <img src={img} alt='medialink' className='md:w-5 w-5' />
-              </div>
+              </Link>
             );
           })}
         </div>

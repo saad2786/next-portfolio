@@ -1,22 +1,30 @@
+"use client";
 import { projects } from "@/data";
-import React from "react";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+import React, { useState } from "react";
+
 import { PinContainer } from "./ui/3d-Pin";
 import { AnimatedPinDemo } from "./ui/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProjects = () => {
+  const [load, setLoad] = useState(false);
+  function toggleLoadMore() {
+    setLoad(true);
+  }
   return (
-    <section id='projects' className='py-20'>
+    <section
+      id='projects'
+      className={`py-20 ${load ? "" : "h-[150vh] overflow-y-hidden "} relative`}
+    >
       <h1 className='heading'>
         The Small Selection of{" "}
         <span className='text-purple'>recent projects</span>
       </h1>
-      <div className='flex flex-wrap  items-center justify-center gap-x-24 gap-y-8 p-4 mt-10'>
+      <div className=' flex flex-wrap  items-center justify-center overflow-hidden gap-x-24 gap-y-8 p-4 mt-10'>
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]   flex items-center justify-center sm:w-[570px] w-[80vw] '
+            className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]   flex items-center justify-center sm:w-[570px] w-[85vw] '
           >
             <PinContainer title={link} href={link}>
               <div className='flex flex-col relative  items—center justify-center sm:w-[570px] sm:h-[45vh] h-[34vh] w-[70vw] overflow-hidden   mb-10  '>
@@ -62,6 +70,18 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
+      {!load && (
+        <div
+          className={`w-full flex items-center justify-center h-40  backdrop-blur-md bg-opacity-80 bg-gradient-to-t from-black-100 to-transparent  absolute bottom-0 left-0 right-0 z-50 `}
+        >
+          <button
+            onClick={toggleLoadMore}
+            className='shadow-[inset_0_0_0_1px_#616467] text-black px-8 py-4 rounded-full tracking-widest uppercase text-md bg-transparent hover:bg-black-300 hover:text-white font-bold dark:text-neutral-200 transition duration-200'
+          >
+            Load More
+          </button>
+        </div>
+      )}
     </section>
   );
 };
