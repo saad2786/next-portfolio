@@ -176,11 +176,11 @@ export const testimonials = [
     title: "Rajarambapu Institute of Technology, Sangli",
   },
   {
-    name: "Higher Secondary Education - 12th",
+    name: "12th Board",
     title: "Cambridge School And Jr. College, Miraj",
   },
   {
-    name: "Secondary Education - 10th",
+    name: "10th Board",
     title: "Jawahar Highschool And Jr. College, Miraj",
   },
   {
