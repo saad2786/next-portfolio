@@ -5,6 +5,9 @@ import React, { useState } from "react";
 import { PinContainer } from "./ui/3d-Pin";
 import { AnimatedPinDemo } from "./ui/PinContainer";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-Card";
+import { AnimatedTooltip } from "./ui/AnimatedTooltip";
 
 const RecentProjects = () => {
   const [load, setLoad] = useState(false);
@@ -24,49 +27,65 @@ const RecentProjects = () => {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]   flex items-center justify-center sm:w-[570px] w-[85vw] '
+            className='sm:h-[41rem] h-[35.5rem] lg:min-h-[32.5rem]   flex items-center justify-center sm:w-[570px] w-[85vw] '
           >
-            <PinContainer title={link} href={link}>
-              <div className='flex flex-col relative  items—center justify-center sm:w-[570px] sm:h-[45vh] h-[34vh] w-[70vw] overflow-hidden   mb-10  '>
-                <div className='relative w-full h-full  overflow-hidden lg:rounded-3xl bg-[#12162d]'>
-                  <img src='/bg.png' alt='bg-img' className='object-cover' />
+            <CardContainer className='inter-var  '>
+              <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black-200 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-[560px]   rounded-xl p-6 border  '>
+                <CardItem translateZ='100' className='w-full mt-4'>
+                  <img
+                    src={img}
+                    height='1000'
+                    width='1000'
+                    className='h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl'
+                    alt='thumbnail'
+                  />
+                </CardItem>
+                <div className=' mt-10'>
+                  <CardItem
+                    translateZ='50'
+                    className='text-xl font-bold text-neutral-600 dark:text-white'
+                  >
+                    {title}
+                  </CardItem>
+                  <CardItem
+                    as='p'
+                    translateZ='60'
+                    className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'
+                  >
+                    {des}
+                  </CardItem>
                 </div>
-
-                <img
-                  src={img}
-                  alt={img}
-                  className='absolute z-10  bottom-8 left-0 right-0 mx-auto md:w-[500px] w-[320px] rounded-lg rotate-3'
-                />
-              </div>
-
-              <h1 className='font-bold lg:text—2xl md:text-xl text-base line-clamp-1'>
-                {title}
-              </h1>
-              <p className='lg:text-base text-sm font-light lg:font-normal line-clamp-2'>
-                {des}
-              </p>
-              <div className='flex items-center justify-between mt-7 mb-3'>
-                <div className='flex items-center '>
-                  {iconLists.map((icon, index) => (
-                    <div
-                      key={icon}
-                      className=' border border-white/[0.2] rounded-full lg:w-10 lg:h-10 w-8 h-8 flex items-center bg-black-100 justify-center'
-                      style={{
-                        transform: `translate(-${5 * index * 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt={icon} className='p-2' />
+                <div className='flex justify-between items-center absolute bottom-0 left-0 mt-20 w-full p-8 pl-6'>
+                  <CardItem
+                    translateZ={20}
+                    as='button'
+                    className=' py-2 rounded-lg  text-xs font-bold flex items-center justify-center '
+                  >
+                    <div className='flex flex-row items-center justify-center w-full'>
+                      <AnimatedTooltip items={iconLists} />
                     </div>
-                  ))}
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as='button'
+                    className='px-4 py-2 rounded-lg bg-black-300 dark:bg-white dark:text-black text-xs font-bold '
+                  >
+                    <Link
+                      href={link}
+                      className='flex items-center justify-center gap-2'
+                      target='_blank'
+                    >
+                      <img
+                        src='/github.svg'
+                        alt='image'
+                        className='text-black'
+                      />
+                      Github
+                    </Link>
+                  </CardItem>
                 </div>
-                <div className='flex items-center justify-center '>
-                  <p className='lg:text-base md:text-sm text-xs text-purple'>
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className='ms-3' color='#cbacf9' />
-                </div>
-              </div>
-            </PinContainer>
+              </CardBody>
+            </CardContainer>
           </div>
         ))}
       </div>
