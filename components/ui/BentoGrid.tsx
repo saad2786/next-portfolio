@@ -86,7 +86,7 @@ export const BentoGridItem = ({
             <div className='flex gap-1 lg:gap-5 w-fit h-full absolute right-2 top-0 lg:-right-2  '>
               <InfiniteMovingSkills
                 items={frontEndSkills}
-                direction='right'
+                direction='left'
                 speed='fast'
               />
             </div>

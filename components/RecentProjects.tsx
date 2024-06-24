@@ -52,7 +52,7 @@ const RecentProjects = () => {
                     translateZ='60'
                     className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'
                   >
-                    {des}
+                    {des.split(" ").slice(0, 15).join(" ")}...
                   </CardItem>
                 </div>
                 <div className='flex justify-between items-center absolute bottom-0 left-0 mt-20 w-full p-8 pl-6'>
