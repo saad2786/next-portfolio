@@ -206,6 +206,43 @@ export const projects = [
     ],
     link: "https://github.com/saad2786/dashboard",
   },
+  {
+    id: 10,
+    title: "Invoice Web App  ",
+    des: "Can create item list and make invoice of all customer using this app ",
+    img: "/invoice.png",
+    iconLists: [
+      { id: 1, img: "/re.svg", name: "Reactjs" },
+      { id: 2, img: "/sass.svg", name: "SASS" },
+      { id: 3, img: "/nodejs.svg", name: "NodeJs" },
+      { id: 4, img: "/mongodb.svg", name: "MongoDB" },
+    ],
+    link: "https://github.com/saad2786/invoice",
+  },
+  {
+    id: 11,
+    title: "Simon Game  ",
+    des: "Play simon game with friends",
+    img: "/simon.png",
+    iconLists: [
+      { id: 1, img: "/html.svg", name: "HTML" },
+      { id: 2, img: "/css.svg", name: "CSS" },
+      { id: 3, img: "/js.svg", name: "Javascript" },
+    ],
+    link: "https://github.com/saad2786/Boss_level_challenge_2",
+  },
+  {
+    id: 12,
+    title: "Dice Game ",
+    des: "Play dice game with friends",
+    img: "/dice.png",
+    iconLists: [
+      { id: 1, img: "/html.svg", name: "HTML" },
+      { id: 2, img: "/css.svg", name: "CSS" },
+      { id: 3, img: "/js.svg", name: "Javascript" },
+    ],
+    link: "https://github.com/saad2786/Dice-Game",
+  },
 ];
 
 export const testimonials = [
