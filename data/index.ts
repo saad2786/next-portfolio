@@ -98,6 +98,7 @@ export const projects = [
     iconLists: [
       { id: 1, img: "/re.svg", name: "Reactjs" },
       { id: 2, img: "/tail.svg", name: "TailwindCSS" },
+      { id: 4, img: "/nodejs.svg", name: "NodeJs" },
       { id: 3, img: "/sql.svg", name: "SQL Server" },
     ],
     link: "https://github.com/saad2786/dairy-management.git",
