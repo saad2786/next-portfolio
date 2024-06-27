@@ -139,7 +139,7 @@ export const projects = [
       { id: 3, img: "/strapi.svg", name: "Strapi" },
       { id: 4, img: "/stripe.svg", name: "Stripe" },
     ],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/saad2786/eCommerce.git",
   },
   {
     id: 4,
