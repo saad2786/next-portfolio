@@ -68,8 +68,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently learning Java Spring Framework",
+    description: "The backend technology",
     className: "md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
