@@ -137,7 +137,7 @@ export const projects = [
       { id: 1, img: "/re.svg", name: "Reactjs" },
       { id: 2, img: "/sass.svg", name: "SASS" },
       { id: 3, img: "/strapi.svg", name: "Strapi" },
-      { id: 4, img: "/stripe.svg", name: "Stripe" },
+      { id: 4, img: "/razor.png", name: "Razorpay" },
     ],
     link: "https://github.com/saad2786/eCommerce.git",
   },
