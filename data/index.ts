@@ -111,7 +111,7 @@ export const projects = [
     iconLists: [
       { id: 1, img: "/re.svg", name: "Reactjs" },
       { id: 2, img: "/tail.svg", name: "TailwindCSS" },
-      { id: 3, img: "/postgresql.svg", name: "Postgrssql" },
+      { id: 3, img: "/postgresql.svg", name: "Supabase" },
     ],
     link: "https://github.com/saad2786/shree_datta_chaha",
   },
@@ -123,7 +123,7 @@ export const projects = [
     iconLists: [
       { id: 1, img: "/re.svg", name: "Reactjs" },
       { id: 2, img: "/tail.svg", name: "TailwindCSS" },
-      { id: 3, img: "/postgresql.svg", name: "Postgrssql" },
+      { id: 3, img: "/postgresql.svg", name: "Supabase" },
       { id: 4, img: "/redux.svg", name: "Redux toolkit" },
     ],
     link: "https://github.com/saad2786/fast-pizza",
