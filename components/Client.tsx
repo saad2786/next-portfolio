@@ -7,7 +7,7 @@ const Client = () => {
     <div className='py-20' id='education'>
       <h1 className='heading'>
         My <span className='text-purple'>education</span> and{" "}
-        <span className='text-purple'>ertification</span>
+        <span className='text-purple'>certification</span>
       </h1>
       <div className='flex flex-col items-center mt-10 mb-5 '>
         <InfiniteMovingCards
