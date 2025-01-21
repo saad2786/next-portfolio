@@ -36,26 +36,29 @@ const Hero = () => {
           <p className='text-center tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
             Hi, I&apos;m Saad, a Software Developer based in India
           </p>
-          <a href='#work'>
+         <div className="flex justify-center items-center gap-4">
+
+          <a href='#work' >
             <MagicButton
               title='Show my work'
               icon={<FaLocationArrow />}
               position='right'
-            />
+              />
           </a>
           <a href='#'>
             <button
               className='relative inline-flex h-12 overflow-hidden rounded-lg  p-[1px] md:w-60 md:mt-10 focus:outline-none'
-            >
+              >
               <span
                 className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-50 px-7   text-sm font-medium text-black backdrop-blur-3xl  gap-2`}
-              >
+                >
 
                 My Resume
 
               </span>
             </button>
           </a>
+                </div>
         </div>
       </div>
     </div>
