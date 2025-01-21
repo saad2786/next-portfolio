@@ -68,7 +68,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently learning Java Spring Framework",
+    title: "Currently learning Salesforce Development",
     description: "The backend technology",
     className: "md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
