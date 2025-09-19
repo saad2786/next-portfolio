@@ -24,7 +24,7 @@ const RecentProjects = () => {
         <span className='text-purple'>recent projects</span>
       </h1>
       <div className=' flex flex-wrap  items-center justify-center overflow-hidden gap-x-24 gap-y-8 p-4 mt-10'>
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, github }) => (
           <div
             key={id}
             className='sm:h-[41rem] h-[35.5rem] lg:min-h-[32.5rem]   flex items-center justify-center sm:w-[570px] w-[85vw] '
@@ -65,13 +65,14 @@ const RecentProjects = () => {
                       <AnimatedTooltip items={iconLists} />
                     </div>
                   </CardItem>
+                  <div className="flex gap-2 items-center justify-center">
                   <CardItem
                     translateZ={20}
                     as='button'
                     className='px-4 py-2 rounded-lg bg-black-300 dark:bg-white dark:text-black text-xs font-bold '
                   >
                     <Link
-                      href={link}
+                      href={github}
                       className='flex items-center justify-center gap-2'
                       target='_blank'
                     >
@@ -83,6 +84,25 @@ const RecentProjects = () => {
                       Github
                     </Link>
                   </CardItem>
+                  {link != "" && <CardItem
+                    translateZ={20}
+                    as='button'
+                    className='px-4 py-2 rounded-lg bg-black-300 dark:bg-green-300 dark:text-black text-xs font-bold '
+                  >
+                    <Link
+                      href={link}
+                      className='flex items-center justify-center gap-2'
+                      target='_blank'
+                    >
+                      <img
+                        src='/visit.png'
+                        alt='image'
+                        className='text-black w-4 h-4'
+                        />
+                      Visit
+                    </Link>
+                  </CardItem>}
+                        </div>
                 </div>
               </CardBody>
             </CardContainer>

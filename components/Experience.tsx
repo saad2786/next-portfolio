@@ -26,6 +26,9 @@ const Experience = () => {
                 <h1 className='text-xl md:text-2xl text-start font-bold'>
                   {item.title}
                 </h1>
+                <p className='text-start text-gray-300 mt-1 italic font-light'>
+                  {item.company}
+                </p>
                 <p className='text-start text-white mt-3 font-normal'>
                   {item.desc}
                 </p>

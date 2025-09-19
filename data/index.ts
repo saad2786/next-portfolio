@@ -68,8 +68,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently learning Salesforce Development",
-    description: "The backend technology",
+    title: "Currently working as Salesforce Developer at Cognizant",
+    description: "The CRM Tool",
     className: "md:col-span-3 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -78,7 +78,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Do you want to Connect?",
     description: "",
     className:
       "lg:col-span-2 md:col-span-3 md:row-span-3 pb-8 -pt-10 flex justify-center item-center",
@@ -101,7 +101,9 @@ export const projects = [
       { id: 4, img: "/nodejs.svg", name: "NodeJs" },
       { id: 3, img: "/sql.svg", name: "SQL Server" },
     ],
+    github: "https://github.com/saad2786/dairy-management.git",
     link: "https://github.com/saad2786/dairy-management.git",
+
   },
   {
     id: 1,
@@ -113,6 +115,7 @@ export const projects = [
       { id: 2, img: "/tail.svg", name: "TailwindCSS" },
       { id: 3, img: "/postgresql.svg", name: "Supabase" },
     ],
+    github: "https://github.com/saad2786/shree_datta_chaha",
     link: "https://github.com/saad2786/shree_datta_chaha",
   },
   {
@@ -126,6 +129,7 @@ export const projects = [
       { id: 3, img: "/postgresql.svg", name: "Supabase" },
       { id: 4, img: "/redux.svg", name: "Redux toolkit" },
     ],
+    github: "https://github.com/saad2786/fast-pizza",
     link: "https://github.com/saad2786/fast-pizza",
   },
   {
@@ -139,6 +143,7 @@ export const projects = [
       { id: 3, img: "/strapi.svg", name: "Strapi" },
       { id: 4, img: "/razorpay.png", name: "Razorpay" },
     ],
+    github: "https://github.com/saad2786/eCommerce.git",
     link: "https://github.com/saad2786/eCommerce.git",
   },
   {
@@ -153,6 +158,7 @@ export const projects = [
       { id: 4, img: "/mongodb.svg", name: "MongoDB" },
       { id: 5, img: "/imdb.svg", name: "Imdb Api" },
     ],
+    github: "https://github.com/saad2786/movie_rating_app",
     link: "https://github.com/saad2786/movie_rating_app",
   },
   {
@@ -166,6 +172,7 @@ export const projects = [
       { id: 3, img: "/nodejs.svg", name: "NodeJs" },
       { id: 4, img: "/mongodb.svg", name: "MongoDB" },
     ],
+    github: "https://makepackinglist.netlify.app",
     link: "https://makepackinglist.netlify.app",
   },
   {
@@ -179,6 +186,7 @@ export const projects = [
 
       { id: 3, img: "/redux.svg", name: "Redux toolkit" },
     ],
+    github: "https://github.com/saad2786/codecrush1",
     link: "https://github.com/saad2786/codecrush1",
   },
   {
@@ -192,6 +200,7 @@ export const projects = [
       { id: 3, img: "/nodejs.svg", name: "NodeJs" },
       { id: 4, img: "/mongodb.svg", name: "MongoDB" },
     ],
+    github: "https://github.com/saad2786/eCommerce",
     link: "https://github.com/saad2786/eCommerce",
   },
   {
@@ -204,6 +213,7 @@ export const projects = [
       { id: 2, img: "/sass.svg", name: "SASS" },
       { id: 3, img: "/chart.png", name: "ChartJs" },
     ],
+    github: "https://github.com/saad2786/dashboard",
     link: "https://github.com/saad2786/dashboard",
   },
   {
@@ -217,6 +227,7 @@ export const projects = [
       { id: 3, img: "/nodejs.svg", name: "NodeJs" },
       { id: 4, img: "/mongodb.svg", name: "MongoDB" },
     ],
+    github: "https://github.com/saad2786/invoice",
     link: "https://github.com/saad2786/invoice",
   },
   {
@@ -229,6 +240,7 @@ export const projects = [
       { id: 2, img: "/css.svg", name: "CSS" },
       { id: 3, img: "/js.svg", name: "Javascript" },
     ],
+    github: "https://github.com/saad2786/Boss_level_challenge_2",
     link: "https://github.com/saad2786/Boss_level_challenge_2",
   },
   {
@@ -241,6 +253,7 @@ export const projects = [
       { id: 2, img: "/css.svg", name: "CSS" },
       { id: 3, img: "/js.svg", name: "Javascript" },
     ],
+    github: "https://github.com/saad2786/Dice-Game",
     link: "https://github.com/saad2786/Dice-Game",
   },
 ];
@@ -305,10 +318,19 @@ export const workExperience = [
   {
     id: 1,
     title: "Fullstack Developer Intern",
-    desc: "Successfully delivered 2 client project  of web-based platform using React.js, Node.js.",
+    company:"Softwin Infotech",
+    desc: "Successfully delivered 2 client project  of web-based platform using React.js, Node.js. Worked on ReactJS tools like React Query, React Spring, Formik etc. ",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
+  {
+    id: 1,
+    title: "Salesforce Developer",
+    company:"Cognizant Technology Solutions",
+    desc: "Worked on Apex, LWC, Flows, Salesforce Admin, Sales Cloud, Service Cloud, Omnistudio, Rest APIs, CI/CD, Data Migration, Salesforce Integrations and more.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  }
 ];
 
 export const socialMedia = [
