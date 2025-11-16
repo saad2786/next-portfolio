@@ -28,6 +28,15 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+     
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F89CJW9D1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F89CJW9D1V');
+</script>
     </html>
   );
 }
