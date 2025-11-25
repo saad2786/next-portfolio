@@ -130,7 +130,7 @@ export const projects = [
       { id: 4, img: "/redux.svg", name: "Redux toolkit" },
     ],
     github: "https://github.com/saad2786/fast-pizza",
-    link: "https://github.com/saad2786/fast-pizza",
+    link: "https://pizzapeakco.netlify.app",
   },
   {
     id: 3,
