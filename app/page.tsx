@@ -1,5 +1,5 @@
 import { Poppins } from "@next/font/google";
-import { Approach } from "@/components/Approach";
+// import { Approach } from "@/components/Approach";
 import Client from "@/components/Client";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -23,7 +23,7 @@ export default function Home() {
         <RecentProjects />
         <Client />
         <Experience />
-        <Approach />
+        {/* <Approach /> */}
         <Footer />
       </div>
     </main>

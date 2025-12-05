@@ -102,7 +102,7 @@ export const projects = [
       { id: 3, img: "/sql.svg", name: "SQL Server" },
     ],
     github: "https://github.com/saad2786/dairy-management.git",
-    link: "https://github.com/saad2786/dairy-management.git",
+    link: "https://dairy-management-frontend-wep2.vercel.app/",
 
   },
   {
@@ -348,5 +348,10 @@ export const socialMedia = [
     id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/saadpatil/",
+  },
+  {
+    id: 4,
+    img: "/youtube.svg",
+    link: "https://www.youtube.com/@heilcode",
   },
 ];
